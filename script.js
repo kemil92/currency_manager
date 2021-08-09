@@ -1,0 +1,40 @@
+angular.module('myApp', ['smart-table'])
+    .controller('mainCtrl', ['$scope',
+        function ($scope) {
+          $scope.rowCollection = [
+              {currency: 'Euro', code: 'EUR', conversion: 0.85, symbol: '€'},
+              {currency: 'Japanese Yen', code: 'JPY', conversion:110.27, symbol: '¥' },
+              {currency: 'Pound Sterling', code: 'GBP', conversion: 0.72, symbol:'£'},
+              {currency: 'Australian Dollar', code: 'AUD', conversion: 1.36, symbol: '$'},
+              {currency: 'Canadaian Dollar', code: 'CAD', conversion: 1.26, symbol: '$'},
+              {currency: 'Swiss Franc', code: 'CHF', conversion: 0.92, symbol: '₣'},
+              {currency: 'Chinese Renminbi', code: 'CNY', conversion: 6.48, symbol: '¥'},
+              {currency: 'Hong Kong Dollar', code: 'HKD', conversion: 7.78, symbol: '$'},
+              {currency: 'New Zealand Dollar', code: 'NZD', conversion: 1.43, symbol: '$'},
+              {currency: 'Swedish Krona', code: 'SEK', conversion: 8.68, symbol: 'kr'},
+              {currency: 'South Korean Won', code: 'KRW', conversion: 1145.92, symbol: '₩'},
+              {currency: 'Singapore Dollar', code: 'SGD', conversion: 1.36, symbol: 'S$'},
+              {currency: 'Mexican Peso', code: 'MXN', conversion: 20.09, symbol: '₱'},
+              {currency: 'Indian Rupee', code: 'INR', conversion: 74.21, symbol: '₹'},
+              {currency: 'Russian ruble', code: 'RUB', conversion: 73.47, symbol: '₽'},
+              {currency: 'South African Rand', code: 'ZAR', conversion: 14.64, symbol: 'R'},
+              {currency: 'Turkish Lira', code: 'TRY', conversion: 8.63, symbol: '₽'},
+              {currency: 'Brazilian Real', code: 'BRL', conversion: 5.24, symbol: 'R$'},
+              {currency: 'New Taiwan Dollar', code: 'TWD', conversion: 27.82, symbol: 'NT$'},
+              {currency: 'Danish Krone', code: 'DKK', conversion: 6.33, symbol: 'kr'},
+              {currency: 'Polish złoty', code: 'PLN', conversion: 3.89, symbol: 'ł'},
+              {currency: 'Thai Baht', code: 'THB', conversion: 33.42, symbol: '฿'},
+              {currency: 'Indonesian Rupiah', code: 'IDR', conversion: 14353.00, symbol: 'Rp'},
+              {currency: 'Hungarian Forint', code: 'HUF', conversion: 301.04, symbol: 'Ft'},
+              {currency: 'Czech Koruna', code: 'CZK', conversion: 21.62, symbol: 'Kč'},
+              {currency: 'Israeli New Shekel', code: 'ILS', conversion: 3.23, symbol: '₪'},
+              {currency: 'Chilean Peso', code: 'CLP', conversion: 788.25, symbol: '$'},
+              {currency: 'Philippine Peso', code: 'PHP', conversion: 50.76, symbol: '₱'},
+              {currency: 'UAE Dirham', code: 'AED', conversion: 3.67, symbol: 'د.إ'},
+              {currency: 'Colombian Peso', code: 'COP', conversion: 3967.10, symbol: '$'},
+              {currency: 'Saudi Riyal', code: 'SAR', conversion: 3.75, symbol: 'SAR'},
+              {currency: 'Malaysian Ringgit', code: 'MYR', conversion: 4.22, symbol: 'MR'},
+              {currency: 'Romanian Leu', code: 'RON', conversion: 4.18, symbol: 'L'}
+          ];
+        }
+    ]);

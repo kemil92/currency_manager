@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <script data-require="angular.js@1.2.21" data-semver="1.2.21" src="https://code.angularjs.org/1.2.21/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="smart-table.debug.js"></script>
+  </head>
+
+  <body ng-controller="mainCtrl" class="body">
+    <div class="mainBody">
+    <h3 class="title">Global Currency Manager</h3>
+    <label>Amount:</label>
+    <input type="number" step="0.01" ng-model="amount" class="form-control input"/>
+    <br />
+    <table st-table="rowCollection" class="table table-bordered tabled-striped">
+	    <thead>
+	      <tr>
+		      <th>Currency</th>
+		      <th>Code</th>
+	      	<th>Conversion Rate(Aug 2021)</th>
+	      	<th>Conversion</th>
+      	</tr>
+    	</thead>
+    	<tbody>
+      	<tr ng-repeat="row in rowCollection">
+      		<td>{{row.currency}}</td>
+        	<td>{{row.code}}</td>
+    	  	<td>$1 USD to {{row.symbol}} {{row.conversion }}</td>
+    	  	<td>{{row.symbol}} {{amount * row.conversion}} {{row.code}}</td>
+       	</tr>
+	    </tbody>
+    </table>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,18 @@
+body {
+  margin: 5%;
+  background-color: lightgrey;
+}
+.mainBody {
+  padding: 10px;
+  background-color: rgb(224,224,224);
+  box-shadow: 10px 10px darkgrey;
+}
+.title {
+  text-align: center;
+}
+.input {
+  width: 25%;
+}
+.table {
+  background-color: white;
+}
